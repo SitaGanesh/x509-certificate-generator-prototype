@@ -2,6 +2,11 @@
 
 This is a prototype for my GSoC 2025 proposal to add X.509 Certificate Generator Templates to OpenWISP. It shows how users can create certificate templates and generate certificates with options like duration and key length. Below are instructions to set it up and run it locally.
 
+## Short demonstration video
+🎥 [Click to watch the demo video](https://github.com/SitaGanesh/x509-certificate-generator-prototype/raw/main/InShot_20250408_092249331.mp4)
+
+![additional ](https://github.com/SitaGanesh/x509-certificate-generator-prototype/blob/main/screenshot1.jpg)
+![additional](https://github.com/SitaGanesh/x509-certificate-generator-prototype/blob/main/screenshot2.jpg)
 ## Prerequisites
 Before you start, make sure you have these installed:
 - **Python 3.8 or higher** (check with `python --version` or `python3 --version`)
