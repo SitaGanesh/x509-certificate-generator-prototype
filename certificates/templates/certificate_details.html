@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Details</title>
+</head>
+<body>
+    <h1>Certificate Details</h1>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Template:</strong> {{ template.name }}</p>
+    <p><strong>Public Key:</strong> <pre>{{ public_key }}</pre></p>
+    <p><strong>Private Key:</strong> <pre>{{ private_key }}</pre></p>
+    <p><strong>UUID:</strong> {{ uuid }}</p>
+    
+    <h2>Actions</h2>
+    <a href="{% url 'download_certificate' certificate_id=certificate.id file_type='crt' %}">Download .crt</a><br>
+    <a href="{% url 'download_certificate' certificate_id=certificate.id file_type='key' %}">Download .key</a>
+    
+    <h2>Sample Configuration</h2>
+    <pre>{{ config_snippet }}</pre>
+</body>
+</html>
